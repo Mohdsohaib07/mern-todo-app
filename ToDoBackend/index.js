@@ -8,7 +8,7 @@ require('dotenv').config();
 dbConnect();
 app.use(express.json());
 app.use(cors({
-    origin: 'https://mern-todo-app-frontend-one.vercel.app/', // Allow requests from this origin
+    origin: 'https://mern-todo-app-frontend-hqygl6ydp-mohd-sohaibs-projects.vercel.app/', // Allow requests from this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true // Allow credentials (cookies) to be included
