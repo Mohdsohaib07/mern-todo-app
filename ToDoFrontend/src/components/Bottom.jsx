@@ -7,7 +7,7 @@ const Bottom = ({tasks,setTasks}) => {
   async function handleClear(){
     if(tasks.length>0){
       try{
-        const res = await axios.delete(`http://localhost:8080/`);
+        const res = await axios.delete(`https://mern-todo-app-livid.vercel.app/`);
         console.log(res.data);
         toast.success(res.data.message);
            setTasks([]);

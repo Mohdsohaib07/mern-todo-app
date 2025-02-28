@@ -8,7 +8,7 @@ const EditModal = ({setTasks,item,modal,setModal}) => {
 
    async function handleSubmit(){
    console.log('id is : '+ item._id);
-      const response = await axios.put(`http://localhost:8080/${item._id}`,{itemName:edit});
+      const response = await axios.put(`https://mern-todo-app-livid.vercel.app/${item._id}`,{itemName:edit});
       console.log(response.data);
       
       setTasks(response.data);

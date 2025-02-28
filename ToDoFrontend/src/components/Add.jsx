@@ -18,7 +18,7 @@ const [tempTask,setTempTask]= useState('');
     // (tempTask !=="") ? setTasks((prev)=>[...prev,{itemName:tempTask}]) : setTempTask('');
     if(tempTask !=='' && tempTask.length<35){
     try{
-      const response = await axios.post('http://localhost:8080/',{itemName:tempTask});
+      const response = await axios.post('https://mern-todo-app-livid.vercel.app/',{itemName:tempTask});
          console.log('todo added '+ response.data);
          setTasks(response.data);
     }

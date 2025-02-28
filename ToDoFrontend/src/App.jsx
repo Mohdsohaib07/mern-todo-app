@@ -13,7 +13,7 @@ const [tasks,setTasks]= useState([]);
 useEffect(()=>{
     async function getData(){
         try{
-            const response = await axios.get('http://localhost:8080/');
+            const response = await axios.get('https://mern-todo-app-livid.vercel.app/');
             console.log(response.data);
             setTasks(response.data);
             
