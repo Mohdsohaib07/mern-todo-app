@@ -1,0 +1,13 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+   font-family: monospace;
+   background-image: linear-gradient(aqua,rgba(46, 84, 211, 0.932));  
+   background-attachment: fixed;
+   height:88.5vh;
+   position: relative;
+}
